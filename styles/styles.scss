@@ -1,0 +1,102 @@
+body {
+  display: flex;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+header {
+  position: absolute;
+  display: flex;
+  width: 100vw;
+}
+
+main {
+  position: relative;
+  top: 50vh;
+  width: 100%;
+  & h1 {
+    position: absolute;
+    display: flex;
+    top: -10rem;
+    justify-content: center;
+    margin: auto;
+    width: 100vw;
+  }
+}
+
+.color-- {
+  &home {
+    background-color: lightgray;
+    color: black;
+  }
+  &red {
+    background-color: red;
+    color: lightgray;
+  }
+  &orange {
+    background-color: orange;
+    color: black;
+  }
+  &blue {
+    background-color: blue;
+    color: lightgray;
+  }
+  &green {
+    background-color: green;
+    color: lightgray;
+  }
+  &yellow {
+    background-color: yellow;
+    color: #000;
+  }
+  &purple {
+    background-color: purple;
+    color: lightgray;
+  }
+}
+
+.color__menu {
+  position: absolute;
+  left: -20px;
+  top: 35px;
+  transition: 0.2s;
+  transition-delay: 0.25s;
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style: none;
+  width: 200px;
+  & li {
+    margin: 0;
+    border: 1px solid gray;
+    padding: 5px;
+    text-align: center;
+  }
+  &--hide {
+    position: absolute;
+    left: -220px;
+    top: 35px;
+    transition: 0.2s;
+    transition-delay: 0.25s;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 200px;
+    & li {
+      margin: 0;
+      border: 1px solid gray;
+      padding: 5px;
+      text-align: center;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.color__form {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100vw;
+}
